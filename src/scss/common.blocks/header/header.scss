@@ -1,0 +1,11 @@
+.header {
+    .header__logo {
+        width: 9vw;
+    }
+    .header__top {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        place-content: center end;
+    }
+}

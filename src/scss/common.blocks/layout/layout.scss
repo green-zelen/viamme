@@ -1,0 +1,12 @@
+.container {
+    .container__inner {
+        padding: 1vw 4vw;
+    }
+}
+.grid {
+    display: grid;
+    grid-gap: 1vw;
+    > div {
+        padding: .5vw;
+    }
+}

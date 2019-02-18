@@ -9,7 +9,7 @@ var precss = require('precss');
 var short = require('postcss-short');
 var sorting = require('postcss-sorting');
 var csslint = require('gulp-csslint');
-var pug = require('gulp-pug');
+var pug = require('gulp-pug');gulp
 
 
 // Сборка компонентов в полные файлы

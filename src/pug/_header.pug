@@ -1,9 +1,19 @@
 extends _footer.pug
 
 block header 
-	// Header
-	header.header
-		// header-top
-		div.header-top Header
-		// header-bottom
-		div.header-bottom
+	div.container
+		div.container__inner
+			// Header
+			header.header
+				// header__top
+				div.header__top.grid
+					div.header__logo
+						a(href="#")
+							img(src="./images/corporate/viamme_logo.svg" alt="Логотип Viamme")
+					div.header__nav
+						nav.navigation
+							a(href="#").navigation__link
+								i.fa.fa-sign-in-alt
+								| Войдите или зарегистрируйтесь
+				// header__bottom
+				div.header__bottom

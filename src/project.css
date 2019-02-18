@@ -1,2 +1,46 @@
 /* ! important a_Imports */
 @import "variables/variables.css";
+
+.header {
+    .header__logo {
+        width: 9vw;
+    }
+    .header__top {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        place-content: center end;
+    }
+}
+
+.navigation {
+    -webkit-box-pack: end;
+    -webkit-justify-content: end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    display: grid;
+    .navigation__link {
+        color: $dark_gray;
+    }
+}
+body {
+    font-size: 1vw;
+    font-family: 'Avenir Next LT Pro Regular', Helvetica, Arial, sans-serif;
+}
+.container {
+    .container__inner {
+        padding: 1vw 4vw;
+    }
+}
+.grid {
+    display: grid;
+    grid-gap: 1vw;
+    > div {
+        padding: .5vw;
+    }
+}

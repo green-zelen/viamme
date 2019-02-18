@@ -1,0 +1,39 @@
+/* Fonts */
+
+    @font-face {
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Regular'), url('../webfonts/AvenirNextLTPro-Regular.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Avenir Next LT Pro Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Italic'), url('../webfonts/AvenirNextLTPro-It.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Avenir Next LT Pro Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Demi'), url('../webfonts/AvenirNextLTPro-Demi.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir Next LT Pro Demi Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Demi Italic'), url('../webfonts/AvenirNextLTPro-DemiIt.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Avenir Next LT Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Bold'), url('../webfonts/AvenirNextLTPro-Bold.woff') format('woff');
+    }
+  

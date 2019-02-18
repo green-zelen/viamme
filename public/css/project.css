@@ -2,3 +2,39 @@
 /*Colors*/
 /*Fonts*/
 /* Shadows & Borders */
+
+.header .header__logo {
+        width: 9vw;
+    }
+
+.header .header__top {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        align-content: center;
+        justify-content: end;
+        place-content: center end;
+    }
+
+.navigation {
+    justify-content: end;
+    display: grid;
+}
+
+.navigation .navigation__link {
+        color: #343434;
+    }
+body {
+    font-size: 1vw;
+    font-family: 'Avenir Next LT Pro Regular', Helvetica, Arial, sans-serif;
+}
+.container .container__inner {
+        padding: 1vw 4vw;
+    }
+.grid {
+    display: grid;
+    grid-gap: 1vw;
+}
+.grid > div {
+        padding: .5vw;
+    }
