@@ -1,6 +1,9 @@
 .header {
     .header__logo {
         width: 9vw;
+        &:hover {
+            opacity: .8;
+        }
     }
     .header__top {
         grid-template-rows: 1fr;

@@ -1,0 +1,35 @@
+.form {
+    .form__title {
+        &.form__title_index {
+            margin-block-end: 1.5vw;
+            .h1 {
+                margin-block-end: .5vw;
+            }
+            .h4 {
+                margin-block-start: .5vw;
+            }
+        }
+    }
+    .form__field {
+        margin-block-end: .5vw;
+        display: grid;
+        grid-gap: .5vw;
+        .label {
+            font-size: .8vw;
+        }
+    }
+}
+
+.form__search-event_full {
+    width: 32vw;
+}
+
+.input {
+    background-color: rgb(241, 241, 241, 0.21);
+    border: 1px solid;
+    border-color: rgba(53, 59, 80, 0.1);
+    border-radius: 3px;
+    height: 1vw;
+    padding: 1vw;
+    box-shadow: rgb(116,116,166, 0.14) 4px 18px 22px 0;
+}

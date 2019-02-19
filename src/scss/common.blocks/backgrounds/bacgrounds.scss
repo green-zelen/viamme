@@ -1,0 +1,7 @@
+.container {
+    &.container__search-event_active-background {
+        background-image: url(../images/background/top_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

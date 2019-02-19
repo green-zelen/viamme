@@ -1,11 +1,24 @@
 extends _modals.pug
 
 block footer
-	// Footer
-	footer.footer
-		// footer-top
-		div.footer-top Футер
-		// footer-center
-		div.footer-center
-		// footer-bottom
-		div.footer-bottom
+	div.container
+		div.container__inner
+			// Footer
+			footer.footer
+				// footer__top
+				div.footer__top.grid
+					div.footer__top__socials(href="#")
+						a.social__link.dark
+							i.fab.fa-facebook-f
+						a.social__link.dark(href="#")
+							i.fab.fa-instagram
+					div.footer__top__settings
+				// footer__bottom
+				div.footer__bottom.grid
+					div.footer__bottom__navigation
+						nav.footer__bottom__navigation__links
+							a.navigation__link.dark(href="#") Условия
+							a.navigation__link.dark(href="#") Конфиденциальность
+							a.navigation__link.dark(href="#") Поддержка
+					div.footer__bottom__copyright
+						span Copyright 2019. Viamme

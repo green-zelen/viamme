@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    &.blue {
+        color: $picton_blue;
+        &:hover {
+            color: $deep_picton_blue;
+        }
+    }
+    &.dark {
+        color: $oxford_blue;
+        &:hover {
+            color: $shuttle_gray;
+        }
+    }
+}

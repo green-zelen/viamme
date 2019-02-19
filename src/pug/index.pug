@@ -1,4 +1,15 @@
 extends _header.pug
 
-block index_top 
-	h2 Контент
+block index_top_form
+	div.container.container__search-event_active-background
+		div.container__inner
+			div.container__search-event
+				div.form__search-event_full
+					form.form(action="")
+						div.form__title.form__title_index
+							h1.h1 Исследуй города
+							h4.h4 с лучшими гидами
+						div.form__body
+							div.form__field
+								label.label(for="city_or_country") Выберите город или страну
+								input.input(type="text" name="city_or_country" placeholder="Например, Барселона")

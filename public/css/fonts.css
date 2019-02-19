@@ -1,39 +1,39 @@
 /* Fonts */
 
     @font-face {
-    font-family: 'Avenir Next LT Pro Regular';
+    font-family: 'Source Sans Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Regular'), url('../webfonts/AvenirNextLTPro-Regular.woff') format('woff');
+    src: local('Avenir Next LT Pro Regular'), url('../webfonts/SourceSansPro-Regular.ttf') format('woff');
     }
     
     @font-face {
-    font-family: 'Avenir Next LT Pro Italic';
+    font-family: 'Source Sans Pro Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Italic'), url('../webfonts/AvenirNextLTPro-It.woff') format('woff');
+    src: local('Source Sans Pro Italic'), url('../webfonts/SourceSansPro-Italic.ttf') format('woff');
     }
     
     @font-face {
-    font-family: 'Avenir Next LT Pro Demi';
+    font-family: 'Source Sans Pro Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Demi'), url('../webfonts/AvenirNextLTPro-Demi.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Avenir Next LT Pro Demi Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir Next LT Pro Demi Italic'), url('../webfonts/AvenirNextLTPro-DemiIt.woff') format('woff');
+    src: local('Source Sans Pro Light'), url('../webfonts/SourceSansPro-Light.ttf') format('woff');
     }
     
     
     @font-face {
-    font-family: 'Avenir Next LT Pro Bold';
+    font-family: 'Source Sans Pro SemiBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Bold'), url('../webfonts/AvenirNextLTPro-Bold.woff') format('woff');
+    src: local('Source Sans Pro SemiBold'), url('../webfonts/SourceSansPro-SemiBold.ttf') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Source Sans Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Sans Pro Bold'), url('../webfonts/SourceSansPro-Bold.ttf') format('woff');
     }
   

@@ -3,10 +3,92 @@
 /*Fonts*/
 /* Shadows & Borders */
 
-.header .header__logo {
-        width: 9vw;
+.container.container__search-event_active-background {
+        background-image: url(../images/background/top_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+.footer {
+    display: grid;
+}
+.footer .footer__top {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+.footer .footer__top .footer__top__socials {
+            display: grid;
+            grid-template-rows: initial;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: initial;
+            grid-auto-flow: row;
+            grid-auto-rows: initial;
+            grid-auto-columns: initial;
+            justify-content: start;
+            grid-gap: 1vw;
+        }
+.footer .footer__top .footer__top__socials .social__link {
+                font-size: 2.5vw;
+            }
+.footer .footer__bottom {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+.footer .footer__bottom .footer__bottom__navigation .footer__bottom__navigation__links {
+                display: grid;
+                grid-template-rows: initial;
+                grid-template-columns: auto auto auto;
+                grid-template-areas: initial;
+                grid-auto-flow: row;
+                grid-auto-rows: initial;
+                grid-auto-columns: initial;
+                justify-content: start;
+                grid-gap: 1vw;
+            }
+.footer .footer__bottom .footer__bottom__copyright {
+            display: grid;
+            justify-content: end;
+        }
+.form .form__title.form__title_index {
+            -webkit-margin-after: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+.form .form__title.form__title_index .h1 {
+                -webkit-margin-after: .5vw;
+                margin-bottom: .5vw;
+            }
+.form .form__title.form__title_index .h4 {
+                -webkit-margin-before: .5vw;
+                margin-top: .5vw;
+            }
+.form .form__field {
+        -webkit-margin-after: .5vw;
+        margin-bottom: .5vw;
+        display: grid;
+        grid-gap: .5vw;
+    }
+.form .form__field .label {
+            font-size: .8vw;
+        }
 
+.form__search-event_full {
+    width: 32vw;
+}
+
+.input {
+    background-color: rgb(241, 241, 241, 0.21);
+    border: 1px solid;
+    border-color: rgba(53, 59, 80, 0.1);
+    border-radius: 3px;
+    height: 1vw;
+    padding: 1vw;
+    box-shadow: rgb(116,116,166, 0.14) 4px 18px 22px 0;
+}
+.header .header__logo {
+        width: 9vw
+    }
+.header .header__logo:hover {
+            opacity: .8;
+        }
 .header .header__top {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
@@ -15,22 +97,30 @@
         justify-content: end;
         place-content: center end;
     }
-
-.navigation {
-    justify-content: end;
-    display: grid;
+i.fa,
+i.fab {
+    margin-right: .5vw
 }
-
-.navigation .navigation__link {
-        color: #343434;
+i.fa.right, i.fab.right {
+        margin-left: .5vw;
     }
 body {
-    font-size: 1vw;
-    font-family: 'Avenir Next LT Pro Regular', Helvetica, Arial, sans-serif;
+    margin: 0;
 }
 .container .container__inner {
         padding: 1vw 4vw;
     }
+.container .container__inner .container__search-event {
+            display: grid;
+            grid-template-rows: initial;
+            grid-template-columns: auto;
+            grid-template-areas: initial;
+            grid-auto-flow: row;
+            grid-auto-rows: initial;
+            grid-auto-columns: initial;
+            justify-content: center;
+            padding: 6vw 0px;
+        }
 .grid {
     display: grid;
     grid-gap: 1vw;
@@ -38,3 +128,27 @@ body {
 .grid > div {
         padding: .5vw;
     }
+a {
+    text-decoration: none
+}
+a.blue {
+        color: #59B2E9
+    }
+a.blue:hover {
+            color: #3294D1;
+        }
+a.dark {
+        color: #353B50
+    }
+a.dark:hover {
+            color: #5d6372;
+        }
+.navigation {
+    display: grid;
+    justify-content: end;
+}
+body {
+    font-size: 1vw;
+    font-family: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
+    color: #353B50;
+}

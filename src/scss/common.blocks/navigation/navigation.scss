@@ -1,7 +1,4 @@
 .navigation {
-    justify-content: end;
     display: grid;
-    .navigation__link {
-        color: $dark_gray;
-    }
+    justify-content: end;
 }
