@@ -10,6 +10,33 @@ block index_top_form
 							h1.h1 Исследуй города
 							h4.h4 с лучшими гидами
 						div.form__body
-							div.form__field
+							div.form__field.form__field__city
 								label.label(for="city_or_country") Выберите город или страну
-								input.input(type="text" name="city_or_country" placeholder="Например, Барселона")
+								div.form__input.form__input_with-left-icon
+									input.input(type="text" name="city_or_country" placeholder="Например, Барселона")
+									i.fa.fa-map-marker-alt
+							div.form__field.form__field__from
+								label.label(for="dates") Даты отпуска
+								div.form__input.form__input_with-dropdown-icon.form__input_with-left-icon
+									input.input.input__date(type="date" name="dates" required="required" placeholder="22 мая 2019" value="2019-05-22")
+									i.fa.fa-calendar
+									i.fa.fa-caret-down
+							div.form__field.form__field__to
+								div.form__input.form__input_with-checkbox
+									label.label У меня только один день
+										input.input.input__checkbox(type="checkbox")
+										span.input__checkbox_checkmark
+								div.form__input.form__input_with-dropdown-icon.form__input_with-left-icon
+									input.input.input__date(type="date" name="dates_to" required="required" placeholder="24 мая 2019" value="2019-05-24")
+									i.fa.fa-calendar
+									i.fa.fa-caret-down
+							div.form__field.form__field__radio
+								div.form__input.form__input_with-radio.form__input_with-radio_inline
+									label.label(for="group_radio") Группа
+										input.input.input__radio(type="radio" name="radio" checked="checked")
+										span.input__radio_checkmark
+									label.label(for="individual_radio") Индивидуально
+										input.input.input__radio(type="radio" name="radio")
+										span.input__radio_checkmark
+							div.form__field.form__field__send
+								button.form__button.form__button_blue.form__button_big.form__button_block Найти экскурсии
