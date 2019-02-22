@@ -8,6 +8,23 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+.divider.divider_double {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "divider__first-half divider__second-half";
+        grid-gap: 1vw;
+        -webkit-margin-before: 3vw;
+        margin-top: 3vw;
+        -webkit-margin-after: 3vw;
+        margin-bottom: 3vw;
+    }
+.divider.divider_double .divider__first-half { grid-area: divider__first-half; }
+.divider.divider_double .divider__second-half { grid-area: divider__second-half; }
+.divider .divider__first-half,
+    .divider .divider__second-half {
+        border-bottom: 1px solid #E8E9EB; 
+    }
 .footer {
     display: grid;
 }
@@ -395,11 +412,11 @@
         overflow: visible;
     }
 .input {
-    height: 3vh;
+    height: 1vw;
 }
 .select {
     cursor: pointer;
-    height: 8.6vh;
+    height: 3.2vw;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -462,6 +479,42 @@
 .fa.right, .fab.right {
         margin-left: .5vw;
     }
+.item.item__city .item__city__img {
+            border-radius: 8px;
+            box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            position: relative;
+            -webkit-margin-after: .5vw;
+            margin-bottom: .5vw;
+        }
+.item.item__city .item__city__img img {
+                width: 100%;
+                display: block;
+            }
+.item.item__city .item__city__img::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 8px;
+                box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            }
+.item.item__city .item__city__titile {
+            color: #353B50;
+        }
+.item.item__city .item__city__events {
+            color: #59B2E9;
+        }
+.item.item__city:hover .item__city__img::after {
+                    box-shadow: none;
+                }
+.item.item__city:hover .item__city__titile:hover {
+                    color: #888E9A;
+                }
+.item.item__city:hover .item__city__events:hover {
+                    color: #3294D1;
+                }
 body {
     margin: 0;
 }
@@ -477,7 +530,16 @@ body {
             grid-auto-rows: initial;
             grid-auto-columns: initial;
             justify-content: center;
-            padding: 6vw 0px 25vw;
+            padding: 6vw 0px 26vw;
+        }
+.container .container__inner .container__cities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+            grid-gap: 2vw;
+            -webkit-margin-before: 3vw;
+            margin-top: 3vw;
+            -webkit-margin-after: 3vw;
+            margin-bottom: 3vw;
         }
 .grid {
     display: grid;
@@ -499,7 +561,7 @@ a.dark {
         color: #353B50
     }
 a.dark:hover {
-            color: #5d6372;
+            color: #888E9A;
         }
 .navigation {
     display: grid;
@@ -510,3 +572,58 @@ body {
     font-family: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
     color: #353B50;
 }
+
+.h1.h_center, .h2.h_center, .h3.h_center, .h4.h_center, .h5.h_center {
+        text-align: center;
+    }
+[dir="ltr"] .h1 {
+    margin-left: 0;
+}
+[dir="rtl"] .h1 {
+    margin-right: 0;
+}
+[dir="ltr"] .h1 {
+    margin-right: 0;
+}
+[dir="rtl"] .h1 {
+    margin-left: 0;
+}
+.h1 {
+    font-size: 2vw;
+    -webkit-margin-before: 1vw;
+    margin-top: 1vw;
+    -webkit-margin-after: 1vw;
+    margin-bottom: 1vw;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-end: 0;
+    font-weight: 700;
+}
+[dir="ltr"] .h2 {
+    margin-left: 0;
+}
+[dir="rtl"] .h2 {
+    margin-right: 0;
+}
+[dir="ltr"] .h2 {
+    margin-right: 0;
+}
+[dir="rtl"] .h2 {
+    margin-left: 0;
+}
+.h2 {
+    font-size: 1.5vw;
+    -webkit-margin-before: 1vw;
+    margin-top: 1vw;
+    -webkit-margin-after: 1vw;
+    margin-bottom: 1vw;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-end: 0;
+    font-weight: 700
+}
+.h2.h2_h1-style {
+        font-size: 2vw;
+    }

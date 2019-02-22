@@ -1,0 +1,17 @@
+.divider {
+    &.divider_double {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "divider__first-half divider__second-half";
+        grid-gap: 1vw;
+        margin-block-start: 3vw;
+        margin-block-end: 3vw;
+        .divider__first-half { grid-area: divider__first-half; }
+        .divider__second-half { grid-area: divider__second-half; }
+    }
+    .divider__first-half,
+    .divider__second-half {
+        border-bottom: 1px solid $athens_gray; 
+    }
+}

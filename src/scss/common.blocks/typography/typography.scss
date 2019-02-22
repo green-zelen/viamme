@@ -3,3 +3,32 @@ body {
     font-family: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
     color: $oxford_blue;
 }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    &.h_center {
+        text-align: center;
+    }
+}
+.h1 {
+    font-size: 2vw;
+    margin-block-start: 1vw;
+    margin-block-end: 1vw;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+.h2 {
+    font-size: 1.5vw;
+    margin-block-start: 1vw;
+    margin-block-end: 1vw;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    &.h2_h1-style {
+        font-size: 2vw;
+    }
+}

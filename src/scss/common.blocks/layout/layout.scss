@@ -13,7 +13,14 @@ body {
             grid-auto-rows: initial;
             grid-auto-columns: initial;
             justify-content: center;
-            padding: 6vw 0px 25vw;
+            padding: 6vw 0px 26vw;
+        }
+        .container__cities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+            grid-gap: 2vw;
+            margin-block-start: 3vw;
+            margin-block-end: 3vw;
         }
     }
 }

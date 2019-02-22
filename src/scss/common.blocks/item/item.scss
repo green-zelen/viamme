@@ -1,0 +1,47 @@
+.item {
+    &.item__city {
+        .item__city__img {
+            border-radius: 8px;
+            box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            position: relative;
+            margin-block-end: .5vw;
+            img {
+                width: 100%;
+                display: block;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 8px;
+                box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            }
+        }
+        .item__city__titile {
+            color: $oxford_blue;
+        }
+        .item__city__events {
+            color: $picton_blue;
+        }
+        &:hover {
+            .item__city__img {
+                &::after {
+                    box-shadow: none;
+                }
+            }
+            .item__city__titile {
+                &:hover {
+                    color: $shuttle_gray;
+                }
+            }
+            .item__city__events {
+                &:hover {
+                    color: $deep_picton_blue;
+                }
+            }
+        }
+    }
+}

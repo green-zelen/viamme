@@ -10,6 +10,25 @@
         background-repeat: no-repeat;
     }
 }
+.divider {
+    &.divider_double {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "divider__first-half divider__second-half";
+        grid-gap: 1vw;
+        -webkit-margin-before: 3vw;
+        margin-block-start: 3vw;
+        -webkit-margin-after: 3vw;
+        margin-block-end: 3vw;
+        .divider__first-half { grid-area: divider__first-half; }
+        .divider__second-half { grid-area: divider__second-half; }
+    }
+    .divider__first-half,
+    .divider__second-half {
+        border-bottom: 1px solid $athens_gray; 
+    }
+}
 .footer {
     display: grid;
     .footer__top {
@@ -479,11 +498,11 @@
     }
 }
 .input {
-    height: 3vh;
+    height: 1vw;
 }
 .select {
     cursor: pointer;
-    height: 8.6vh;
+    height: 3.2vw;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -555,6 +574,64 @@
         margin-left: .5vw;
     }
 }
+.item {
+    &.item__city {
+        .item__city__img {
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            -moz-box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            position: relative;
+            -webkit-margin-after: .5vw;
+            margin-block-end: .5vw;
+            img {
+                width: 100%;
+                display: block;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;
+                -webkit-box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+                -moz-box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+                box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            }
+        }
+        .item__city__titile {
+            color: $oxford_blue;
+        }
+        .item__city__events {
+            color: $picton_blue;
+        }
+        &:hover {
+            .item__city__img {
+                &::after {
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+            .item__city__titile {
+                &:hover {
+                    color: $shuttle_gray;
+                }
+            }
+            .item__city__events {
+                &:hover {
+                    color: $deep_picton_blue;
+                }
+            }
+        }
+    }
+}
 body {
     margin: 0;
 }
@@ -574,7 +651,16 @@ body {
             -moz-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            padding: 6vw 0px 25vw;
+            padding: 6vw 0px 26vw;
+        }
+        .container__cities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+            grid-gap: 2vw;
+            -webkit-margin-before: 3vw;
+            margin-block-start: 3vw;
+            -webkit-margin-after: 3vw;
+            margin-block-end: 3vw;
         }
     }
 }
@@ -612,4 +698,45 @@ body {
     font-size: 1vw;
     font-family: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
     color: $oxford_blue;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    &.h_center {
+        text-align: center;
+    }
+}
+.h1 {
+    font-size: 2vw;
+    -webkit-margin-before: 1vw;
+    margin-block-start: 1vw;
+    -webkit-margin-after: 1vw;
+    margin-block-end: 1vw;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-end: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+.h2 {
+    font-size: 1.5vw;
+    -webkit-margin-before: 1vw;
+    margin-block-start: 1vw;
+    -webkit-margin-after: 1vw;
+    margin-block-end: 1vw;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-end: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    &.h2_h1-style {
+        font-size: 2vw;
+    }
 }
