@@ -1,7 +1,8 @@
 body {
     font-size: 1vw;
-    font-family: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
+    font-family: $regular_font;
     color: $oxford_blue;
+    -webkit-font-smoothing: antialiased;
 }
 
 .h1,
@@ -9,6 +10,7 @@ body {
 .h3,
 .h4,
 .h5 {
+    font-family: $bold_font;
     &.h_center {
         text-align: center;
     }

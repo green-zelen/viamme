@@ -1,4 +1,11 @@
 .navigation {
     display: grid;
     justify-content: end;
+    .navigation__link {
+        font-family: $bold_font;
+        &:hover {
+            color: $oxford_blue;
+            opacity: .7;
+        }
+    }
 }

@@ -291,13 +291,14 @@
     .form__button {
         border: none;
         border-radius: 3px;
+        font-family: $bold_font;
         &.form__button_block {
             display: block;
             width: 100%;
         }
         &.form__button_big {
             padding: 1vw;
-            font-size: 1vw;
+            font-size: 1.1vw;
         }
         &.form__button_blue {
             background-color: $picton_blue;

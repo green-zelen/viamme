@@ -50,32 +50,217 @@ block index_popular_cities
 				h2.h2.h2_h1-style.h_center Самые популярные города
 				div.container__cities-list
 					div.item.item__city
-						a(href="#" target="_blank")
+						a(href="#")
 							div.item__city__img
 								img(src="./images/stubs/barselona.jpg", alt="Барселона, Испания")
-							div.item__city__titile Барселона, Испания
+							div.item__city__title Барселона, Испания
 							div.item__city__events 231 экскурсия
 					div.item.item__city
-						a(href="#" target="_blank")
+						a(href="#")
 							div.item__city__img
 								img(src="./images/stubs/rome.jpg", alt="Рим, Италия")
-							div.item__city__titile Рим, Италия
+							div.item__city__title Рим, Италия
 							div.item__city__events 309 экскурсий
 					div.item.item__city
-						a(href="#" target="_blank")
+						a(href="#")
 							div.item__city__img
 								img(src="./images/stubs/paris.jpg", alt="Париж, Франция")
-							div.item__city__titile Париж, Франция
+							div.item__city__title Париж, Франция
 							div.item__city__events 298 экскурсий
 					div.item.item__city
-						a(href="#" target="_blank")
+						a(href="#")
 							div.item__city__img
 								img(src="./images/stubs/moscow.jpg", alt="Москва, Россия")
-							div.item__city__titile Москва, Россия
+							div.item__city__title Москва, Россия
 							div.item__city__events 302 экскурсии
 					div.item.item__city
-						a(href="#" target="_blank")
+						a(href="#")
 							div.item__city__img
 								img(src="./images/stubs/osaka.jpg", alt="Осака, Япония")
-							div.item__city__titile Осака, Япония
+							div.item__city__title Осака, Япония
 							div.item__city__events 195 экскурсий
+block index_popular_events
+	div.container
+		div.container__inner
+			div.container__popular-events
+				div.divider.divider_double
+					div.divider__first-half
+					div.divider__second-half
+				h2.h2.h2_h1-style.h_center Самые популярные экскурсии
+				div.container__events-list
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 2890 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_1.jpg", alt="Блошиные рынки Берлина")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Пешая прогулка
+								span.item__event__info-slash /
+								span.item__event__info-city Берлин, Германия
+							a.item__event__title(href="#" target="_blank") Блошиные рынки Берлина
+							div.item__event__rate
+								span.item__event__rate-num 4.62
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 32 отзыва
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 4800 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_2.jpg", alt="Групповая экскурсия в Кремль")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Пешая прогулка
+								span.item__event__info-slash /
+								span.item__event__info-city Москва, Россия
+							a.item__event__title(href="#" target="_blank") Групповая экскурсия в Кремль
+							div.item__event__rate
+								span.item__event__rate-num 4.9
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 71 отзыв
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 9906 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_3.jpg", alt="Весь день на островах")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Прогулка на катере
+								span.item__event__info-slash /
+								span.item__event__info-city Боракай, Филлипины
+							a.item__event__title(href="#" target="_blank") Весь день на островах
+							div.item__event__rate
+								span.item__event__rate-num 4.4
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 110 отзывов
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 3780 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_4.jpg", alt="Забег по барам Будапешта")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Пешая прогулка
+								span.item__event__info-slash /
+								span.item__event__info-city Будапешт, Венгрия
+							a.item__event__title(href="#" target="_blank") Забег по барам Будапешта
+							div.item__event__rate
+								span.item__event__rate-num 4.98
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 61 отзыв
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 4090 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_5.jpg", alt="Самые красивые фонтаны Рима")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Автобусная экскурсия
+								span.item__event__info-slash /
+								span.item__event__info-city Рим, Италия
+							a.item__event__title(href="#" target="_blank") Самые красивые фонтаны Рима
+							div.item__event__rate
+								span.item__event__rate-num 4.51
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 84 отзыва
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 6405 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_6.jpg", alt="На коне через лес и горы")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Конная прогулка
+								span.item__event__info-slash /
+								span.item__event__info-city Порто, Португалия
+							a.item__event__title(href="#" target="_blank") На коне через лес и горы
+							div.item__event__rate
+								span.item__event__rate-num 4.7
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 29 отзывов
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 4020 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_7.jpg", alt="Тропинки между древними замками")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Пешая прогулка
+								span.item__event__info-slash /
+								span.item__event__info-city Комо, Италия
+							a.item__event__title(href="#" target="_blank") Тропинки между древними замками
+							div.item__event__rate
+								span.item__event__rate-num 4.84
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 62 отзыва
+					div.item.item__event
+						a(href="#" target="_blank")
+							div.item__event__img
+								div.item__event__price 
+									span.item__event__price-num 3280 
+									span.item__event__price-currency ₽
+								img(src="./images/stubs/event_8.jpg", alt="По следам Александра II")
+						div.item__event__description
+							div.item__event__info
+								span.item__event__info-type Автобусная экскурсия
+								span.item__event__info-slash /
+								span.item__event__info-city Санкт-Петербург, Россия
+							a.item__event__title(href="#" target="_blank") По следам Александра II
+							div.item__event__rate
+								span.item__event__rate-num 4.7
+								span.item__event__rate-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								span.item__event__rate-reviews 58 отзывов
+

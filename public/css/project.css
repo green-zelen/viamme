@@ -344,7 +344,8 @@
                 }
 .form .form__button {
         border: none;
-        border-radius: 3px
+        border-radius: 3px;
+        font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif
     }
 .form .form__button.form__button_block {
             display: block;
@@ -352,7 +353,7 @@
         }
 .form .form__button.form__button_big {
             padding: 1vw;
-            font-size: 1vw;
+            font-size: 1.1vw;
         }
 .form .form__button.form__button_blue {
             background-color: #59B2E9;
@@ -500,7 +501,8 @@
                 border-radius: 8px;
                 box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
             }
-.item.item__city .item__city__titile {
+.item.item__city .item__city__title {
+            font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif;
             color: #353B50;
         }
 .item.item__city .item__city__events {
@@ -509,11 +511,105 @@
 .item.item__city:hover .item__city__img::after {
                     box-shadow: none;
                 }
-.item.item__city:hover .item__city__titile:hover {
+.item.item__city:hover .item__city__title:hover {
                     color: #888E9A;
                 }
 .item.item__city:hover .item__city__events:hover {
                     color: #3294D1;
+                }
+.item.item__event .item__event__img {
+            border-radius: 8px;
+            box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            position: relative;
+            -webkit-margin-after: .5vw;
+            margin-bottom: .5vw;
+        }
+.item.item__event .item__event__img img {
+                width: 100%;
+                display: block;
+            }
+.item.item__event .item__event__img::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 8px;
+                box-shadow: inset 0px 1px 33px 0px rgb(0,0,0, 0.3);
+            }
+.item.item__event .item__event__img .item__event__price {
+                position: absolute;
+                z-index: 2;
+                left: .5vw;
+                bottom: .5vw;
+                background: rgb(53, 59, 80, 0.7);
+                border-radius: 8px;
+                color: #FFFFFF;
+                font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif;
+                font-size: 1.5vw;
+                text-shadow: 1px 1px 4px #272727;
+                padding: .5vw 1vw;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+.item.item__event .item__event__img .item__event__price > span {
+                    margin-right: .5vw
+                }
+.item.item__event .item__event__img .item__event__price > span:last-child{
+                        margin-right: 0;
+                    }
+.item.item__event .item__event__description .item__event__info {
+                display: flex;
+            }
+.item.item__event .item__event__description .item__event__info > span {
+                    margin-right: .5vw;
+                    white-space: nowrap
+                }
+.item.item__event .item__event__description .item__event__info > span:last-child{
+                        margin-right: 0;
+                        color: #767676;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+.item.item__event .item__event__description .item__event__title {
+                color: #353B50;
+                font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif;
+                font-size: 1.4vw;
+                margin: .3vw 0;
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis
+            }
+.item.item__event .item__event__description .item__event__title:hover {
+                    color: #3294D1;
+                }
+.item.item__event .item__event__description .item__event__rate > span {
+                    color: #59B2E9;
+                    font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif;
+                    margin-right: .5vw;
+                    font-size: 1.1vw;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+.item.item__event .item__event__description .item__event__rate > span.item__event__rate-reviews {
+                        font-family: 'Source Sans Pro Light', Helvetica, Arial, sans-serif;
+                        color: #767676;
+                        margin-right: 0;
+                    }
+.item.item__event .item__event__description .item__event__rate .item__event__rate-stars {
+                    font-size: .85vw;
+                    margin-right: 1vw;
+                    white-space: nowrap;
+                }
+.item.item__event .item__event__description .item__event__rate .item__event__rate-stars .fa {
+                        color: #59B2E9;
+                        margin-right: .3vw;
+                        vertical-align: baseline;
+                    }
+.item.item__event:hover .item__event__img::after {
+                    box-shadow: none;
                 }
 body {
     margin: 0;
@@ -535,6 +631,15 @@ body {
 .container .container__inner .container__cities-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+            grid-gap: 2vw;
+            -webkit-margin-before: 3vw;
+            margin-top: 3vw;
+            -webkit-margin-after: 3vw;
+            margin-bottom: 3vw;
+        }
+.container .container__inner .container__events-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
             grid-gap: 2vw;
             -webkit-margin-before: 3vw;
             margin-top: 3vw;
@@ -567,10 +672,26 @@ a.dark:hover {
     display: grid;
     justify-content: end;
 }
+.navigation .navigation__link {
+        font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif
+    }
+.navigation .navigation__link:hover {
+            color: #353B50;
+            opacity: .7;
+        }
 body {
     font-size: 1vw;
     font-family: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
     color: #353B50;
+    -webkit-font-smoothing: antialiased;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    font-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif
 }
 
 .h1.h_center, .h2.h_center, .h3.h_center, .h4.h_center, .h5.h_center {
