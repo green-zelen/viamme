@@ -263,4 +263,25 @@ block index_popular_events
 									i.fa.fa-star
 									i.fa.fa-star
 								span.item__event__rate-reviews 58 отзывов
-
+block subscribe
+	div.container.container__subscribe_active-background
+		div.container__inner
+			div.container__subscribe
+				div.form__subscribe
+					form.form(action="")
+						div.form__title.form__title_index
+							h2.h2.h2_h1-style Подпишись на новые экскурсии в твоем городе
+						div.form__body
+							div.form__field.form__field__city
+								label.label(for="city_or_country") Город или страна
+								div.form__input.form__input_with-left-icon
+									input.input(type="text" name="city_or_country" placeholder="Например, Барселона")
+									i.fa.fa-map-marker-alt
+							div.form__field.form__field__email
+								label.label(for="email") Email
+								div.form__input.form__input_with-left-icon
+									input.input(type="email" name="email" placeholder="my@email.com")
+									i.fa.fa-envelope
+							div.form__field.form__field__subscribe
+								label.label.hidden -
+								button.form__button.form__button_blue.form__button_big.form__button_block Подписаться на рассылку

@@ -4,4 +4,9 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    &.container__subscribe_active-background {
+        background-image: url(../images/background/subscribe_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

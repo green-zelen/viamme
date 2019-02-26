@@ -297,7 +297,7 @@
             width: 100%;
         }
         &.form__button_big {
-            padding: 1vw;
+            padding: .9vw;
             font-size: 1.1vw;
         }
         &.form__button_blue {
@@ -329,7 +329,6 @@
     text-align: left;
     line-height: 1.2vw;
     color: $regular_black;
-    border-radius: .28571429rem;
     -webkit-transition: border-color .1s ease,-webkit-box-shadow .1s ease;
     transition: border-color .1s ease,-webkit-box-shadow .1s ease;
     transition: box-shadow .1s ease,border-color .1s ease;
@@ -373,6 +372,11 @@
         display: none;
     }
 }
+.label {
+    &.hidden {
+        visibility: hidden;
+    }
+}
 
 .form__search-event_full {
     width: 32vw;
@@ -388,6 +392,21 @@
             .form__field__to { grid-area: form__field__to; }
             .form__field__radio { grid-area: form__field__radio; }
             .form__field__send { grid-area: form__field__send; }
+        }
+    }
+}
+.form__subscribe {
+    width: 62vw;
+    .form {
+        .form__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "form__field__city form__field__email form__field__subscribe";
+            grid-gap: 1vw;
+            .form__field__city { grid-area: form__field__city; }
+            .form__field__email { grid-area: form__field__email; }
+            .form__field__subscribe { grid-area: form__field__subscribe; }
         }
     }
 }

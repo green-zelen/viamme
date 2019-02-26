@@ -8,6 +8,12 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+.container.container__subscribe_active-background {
+        background-image: url(../images/background/subscribe_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 .divider.divider_double {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -27,6 +33,8 @@
     }
 .footer {
     display: grid;
+    -webkit-margin-before: 3vw;
+    margin-top: 3vw;
 }
 .footer .footer__top {
         grid-template-rows: 1fr;
@@ -352,7 +360,7 @@
             width: 100%;
         }
 .form .form__button.form__button_big {
-            padding: 1vw;
+            padding: .9vw;
             font-size: 1.1vw;
         }
 .form .form__button.form__button_blue {
@@ -380,7 +388,6 @@
     text-align: left;
     line-height: 1.2vw;
     color: #333333;
-    border-radius: .28571429rem;
     transition: box-shadow .1s ease,border-color .1s ease
 }
 
@@ -426,6 +433,9 @@
 .select::-ms-expand {
         display: none;
     }
+.label.hidden {
+        visibility: hidden;
+    }
 
 .form__search-event_full {
     width: 32vw;
@@ -448,6 +458,19 @@
 .form__search-event_full .form .form__body .form__field__radio { grid-area: form__field__radio; }
 
 .form__search-event_full .form .form__body .form__field__send { grid-area: form__field__send; }
+.form__subscribe {
+    width: 62vw;
+}
+.form__subscribe .form .form__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "form__field__city form__field__email form__field__subscribe";
+            grid-gap: 1vw;
+        }
+.form__subscribe .form .form__body .form__field__city { grid-area: form__field__city; }
+.form__subscribe .form .form__body .form__field__email { grid-area: form__field__email; }
+.form__subscribe .form .form__body .form__field__subscribe { grid-area: form__field__subscribe; }
 .form__footer_settings .form .form__body {
             display: grid;
             grid-template-columns: 8vw 8vw;
@@ -471,14 +494,6 @@
         align-content: center;
         justify-content: end;
         place-content: center end;
-    }
-.fa,
-.fab {
-    color: #333333;
-    margin-right: .5vw
-}
-.fa.right, .fab.right {
-        margin-left: .5vw;
     }
 .item.item__city .item__city__img {
             border-radius: 8px;
@@ -599,18 +614,41 @@
                         margin-right: 0;
                     }
 .item.item__event .item__event__description .item__event__rate .item__event__rate-stars {
-                    font-size: .85vw;
+                    font-size: .8vw;
                     margin-right: 1vw;
                     white-space: nowrap;
                 }
 .item.item__event .item__event__description .item__event__rate .item__event__rate-stars .fa {
                         color: #59B2E9;
                         margin-right: .3vw;
-                        vertical-align: baseline;
+                        vertical-align: inherit;
                     }
 .item.item__event:hover .item__event__img::after {
                     box-shadow: none;
                 }
+.fa,
+.fab {
+    color: #333333;
+    margin-right: .5vw
+}
+.fa.right, .fab.right {
+        margin-left: .5vw;
+    }
+a {
+    text-decoration: none
+}
+a.blue {
+        color: #59B2E9
+    }
+a.blue:hover {
+            color: #3294D1;
+        }
+a.dark {
+        color: #353B50
+    }
+a.dark:hover {
+            color: #888E9A;
+        }
 body {
     margin: 0;
 }
@@ -646,6 +684,17 @@ body {
             -webkit-margin-after: 3vw;
             margin-bottom: 3vw;
         }
+.container .container__inner .container__subscribe {
+            display: grid;
+            grid-template-rows: initial;
+            grid-template-columns: auto;
+            grid-template-areas: initial;
+            grid-auto-flow: row;
+            grid-auto-rows: initial;
+            grid-auto-columns: initial;
+            justify-content: center;
+            padding: 6vw 0px 6vw;
+        }
 .grid {
     display: grid;
     grid-gap: 1vw;
@@ -653,21 +702,6 @@ body {
 .grid > div {
         padding: .5vw;
     }
-a {
-    text-decoration: none
-}
-a.blue {
-        color: #59B2E9
-    }
-a.blue:hover {
-            color: #3294D1;
-        }
-a.dark {
-        color: #353B50
-    }
-a.dark:hover {
-            color: #888E9A;
-        }
 .navigation {
     display: grid;
     justify-content: end;

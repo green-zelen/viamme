@@ -29,6 +29,17 @@ body {
             margin-block-start: 3vw;
             margin-block-end: 3vw;
         }
+        .container__subscribe {
+            display: grid;
+            grid-template-rows: initial;
+            grid-template-columns: auto;
+            grid-template-areas: initial;
+            grid-auto-flow: row;
+            grid-auto-rows: initial;
+            grid-auto-columns: initial;
+            justify-content: center;
+            padding: 6vw 0px 6vw;
+        }
     }
 }
 .grid {

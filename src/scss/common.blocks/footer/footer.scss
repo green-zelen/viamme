@@ -1,5 +1,6 @@
 .footer {
     display: grid;
+    margin-block-start: 3vw;
     .footer__top {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
