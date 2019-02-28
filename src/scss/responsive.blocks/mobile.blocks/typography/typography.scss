@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 1.8vw;
+    }
+    .h1 {
+        font-size: 1.5rem;
+    }
+    .h2 {
+        font-size: 1.3rem;
+        &.h2_h1-style {
+            font-size: 1.5rem;
+        }
+    }
+    .h4 {
+        font-size: 1rem;
+    }
+}

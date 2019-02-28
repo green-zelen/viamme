@@ -1,6 +1,7 @@
 extends _header.pug
 
 block index_top_form
+	//- Основная поисковая форма
 	div.container.container__search-event_active-background
 		div.container__inner
 			div.container__search-event
@@ -24,13 +25,15 @@ block index_top_form
 							div.form__field.form__field__to
 								div.form__input.form__input_with-checkbox
 									label.label У меня только один день
-										input.input.input__checkbox(type="checkbox")
+										input.input.input__checkbox(type="checkbox" checked="checked")
 										span.input__checkbox_checkmark
-								div.form__input.form__input_with-dropdown-icon.form__input_with-left-icon
+								//- Класс .disabled присваевается при нажатом чекбоксе "У меня только один день". Нужно сделать неактивным сам инпут по клику.
+								div.form__input.form__input_with-dropdown-icon.form__input_with-left-icon.disabled
 									input.input.input__date(type="date" name="dates_to" required="required" placeholder="24 мая 2019" value="2019-05-24")
 									i.fa.fa-calendar
 									i.fa.fa-caret-down
 							div.form__field.form__field__radio
+								//- Радиокнопки сейчас не работают из-за кастомного дизайна, нужен скрипт на их переключение
 								div.form__input.form__input_with-radio.form__input_with-radio_inline
 									label.label(for="group_radio") Группа
 										input.input.input__radio(type="radio" name="radio" checked="checked")
@@ -41,6 +44,7 @@ block index_top_form
 							div.form__field.form__field__send
 								button.form__button.form__button_blue.form__button_big.form__button_block Найти экскурсии
 block index_popular_cities
+	//- Блок популярных городов
 	div.container
 		div.container__inner
 			div.container__popular-cities
@@ -80,6 +84,7 @@ block index_popular_cities
 							div.item__city__title Осака, Япония
 							div.item__city__events 195 экскурсий
 block index_popular_events
+	//- Блок популярных экскурсий
 	div.container
 		div.container__inner
 			div.container__popular-events
@@ -264,6 +269,7 @@ block index_popular_events
 									i.fa.fa-star
 								span.item__event__rate-reviews 58 отзывов
 block subscribe
+	//- Блок подписки на рассылку
 	div.container.container__subscribe_active-background
 		div.container__inner
 			div.container__subscribe

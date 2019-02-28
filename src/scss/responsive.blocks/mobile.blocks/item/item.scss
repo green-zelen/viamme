@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+    .item {
+        &.item__city {
+            .item__city__title {
+                font-size: 1rem;
+            }
+            .item__city__events {
+                font-size: .9rem;
+            }
+        }
+        &.item__event {
+            .item__event__img {
+                .item__event__price {
+                    font-size: 1.5rem;
+                    padding: .5rem 1rem;
+                    bottom: .5rem;
+                    left: .5rem;
+                }
+            }
+            .item__event__description {
+                .item__event__info {
+                    font-size: .8rem;
+                }
+                .item__event__title {
+                    font-size: 1rem;
+                }
+                .item__event__rate {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

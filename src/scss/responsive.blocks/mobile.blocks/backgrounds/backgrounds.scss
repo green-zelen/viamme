@@ -1,0 +1,10 @@
+@media screen and (max-width: 767px) {
+    .container {
+        &.container__search-event_active-background {
+            background-image: none;
+        }
+        &.container__subscribe_active-background {
+            background-image: none;
+        }
+    }
+}

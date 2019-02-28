@@ -4,6 +4,9 @@
         &:hover {
             opacity: .8;
         }
+        a {
+            display: block;
+        }
     }
     .header__top {
         grid-template-rows: 1fr;

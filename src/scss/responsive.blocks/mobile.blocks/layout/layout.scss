@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+    .container {
+        .container__inner {
+            .container__search-event {
+                padding: 6vw 0px 6vw;
+            }
+            .container__cities-list {
+                grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+                grid-gap: 4vw;
+            }
+            .container__events-list {
+                grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+                grid-gap: 4vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        .container__inner {
+            .container__cities-list {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+            .container__events-list {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+        }
+    }
+}

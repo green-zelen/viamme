@@ -16,7 +16,7 @@ body {
     }
 }
 .h1 {
-    font-size: 2vw;
+    font-size: 200%;
     margin-block-start: 1vw;
     margin-block-end: 1vw;
     margin-inline-start: 0;
@@ -24,13 +24,24 @@ body {
     font-weight: bold;
 }
 .h2 {
-    font-size: 1.5vw;
+    font-size: 150%;
     margin-block-start: 1vw;
     margin-block-end: 1vw;
     margin-inline-start: 0;
     margin-inline-end: 0;
     font-weight: bold;
     &.h2_h1-style {
-        font-size: 2vw;
+        font-size: 200%;
+    }
+}
+
+.disabled {
+    opacity: .3;
+    cursor: default;
+    > * {
+        cursor: default !important; 
+        &:hover {
+            cursor: default !important; 
+        }
     }
 }
